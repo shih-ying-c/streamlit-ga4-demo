@@ -16,9 +16,10 @@ GA_SCRIPT = """
 """
 
 # Inject script to page
-components.html(GA_SCRIPT, height=0, width=0)
+st.markdown(GA_SCRIPT, unsafe_allow_html=True)
 
 # ==== Main App Content ====
 st.title("Streamlit + GA4 Tracking")
+st.title("^_^")
 st.write("這是一個已經插入 Google Analytics (GA4) 的 Streamlit App 🎉")
 
